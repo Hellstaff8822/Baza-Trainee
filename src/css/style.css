@@ -78,26 +78,36 @@ body {
 .career-tracker {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 124px;
 }
-
+.career-media-text {
+  display: none;
+}
 .career-text {
   font-weight: 300;
   font-size: 24px;
   line-height: 150%;
 }
+
 .card {
   margin-top: 136px;
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
+
+.card-header .card-mobile {
+  display: none;
+}
 .card-title {
   text-align: left;
 }
 .card-button {
   padding: 12px 40px;
-  width: 353px;
+  max-width: 353px;
+  width: 100%;
+  align-self: center;
   height: 51px;
   margin-top: 92px;
 }
@@ -179,12 +189,14 @@ body {
   display: block;
 }
 
-
-
 .questions {
   margin-top: 136px;
   width: 100%;
   max-width: 1280px;
+}
+
+.questions-title {
+  margin-bottom: 104px;
 }
 
 .accordion-container {
@@ -304,12 +316,28 @@ body {
   font-size: 16px;
   line-height: 150%;
   color: var(--black);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.benefits-desc.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .counter-container {
   height: 80px;
   overflow: hidden;
   position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.counter-container.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .counter-track {
@@ -371,8 +399,7 @@ body {
   display: flex;
   gap: 16px;
 }
-.footer-item {
-}
+
 .footer-title {
   font-weight: 600;
   font-size: 32px;
@@ -504,7 +531,11 @@ body {
   line-height: 150%;
   color: var(--black);
 }
-
+.reviewer-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
 .reviewer-city {
   color: var(--grey);
 }

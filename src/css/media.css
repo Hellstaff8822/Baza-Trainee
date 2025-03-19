@@ -1,0 +1,462 @@
+/* Desktop-small - 1280px */
+
+/* Tablet - 768px */
+@media screen and (max-width: 768px) {
+  #app {
+    padding: 40px;
+    overflow-x: hidden;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  /* Header */
+  .header {
+  }
+
+  /* Assistant section */
+
+  .assistant {
+    flex-direction: column-reverse;
+    gap: 16px;
+    margin-top: 96px;
+    & img {
+      width: 100%;
+      max-width: 688px;
+    }
+  }
+
+  .assistant-info {
+    align-items: center;
+    text-align: center;
+    margin-top: 72px;
+  }
+
+  /* Career-tracker */
+  .career-tracker {
+    flex-direction: column;
+    padding: 40px 88px;
+    margin-top: 112px;
+    gap: 40px;
+    align-items: start;
+    & img {
+      width: 100%;
+      max-width: 184px;
+    }
+  }
+  .career-text {
+    font-size: 20px;
+  }
+
+  .career-media-text {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+  }
+  .career-text span {
+    display: none;
+  }
+  .career-media {
+    display: flex;
+    align-items: center;
+    gap: 104px;
+  }
+
+  /* Card section */
+  .card {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 112px;
+  }
+  .card-item {
+    gap: 16px;
+  }
+  .card-header .card-mobile {
+    display: none;
+  }
+  .card-item-title {
+    font-size: 24px;
+  }
+
+  .card-desc {
+    font-size: 20px;
+  }
+  .number {
+    font-size: 48px;
+  }
+  .card-button {
+    margin-top: 20px;
+    margin-bottom: 112px;
+  }
+
+  /* Benefits section */
+
+  .benefits {
+    position: relative;
+    padding: 40px 32px;
+    border-radius: 16px;
+    z-index: 2;
+    margin-top: 112px;
+  }
+
+  .benefits-title {
+    position: absolute;
+    top: -88px;
+    left: 16px;
+    width: calc(100% - 32px);
+    font-size: 32px;
+    text-align: left;
+  }
+  .benefits-desc {
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .benefits-number-item,
+  .twenty-four,
+  .seven,
+  .slash {
+    font-size: 48px;
+  }
+
+  .benefits-info {
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .benefits-item {
+    width: 100%;
+  }
+
+  /* Reviews section */
+  .reviews {
+    padding: 40px 0;
+    margin-top: 112px;
+  }
+
+  .reviews-container {
+    gap: 16px;
+  }
+
+  .reviews-container-wrapper {
+    width: calc(106% - 10px);
+  }
+
+  .review-item {
+    padding: 24px 12px;
+  }
+  .review-text {
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .reviewer-name,
+  .review-city {
+    font-size: 14px;
+  }
+
+  /* Accordion section */
+  .questions {
+    margin-top: 112px;
+  }
+
+  .accordion-header {
+    font-size: 20px;
+  }
+  .accordion {
+    flex: 1;
+    padding: 0;
+  }
+
+  .content-container {
+    display: none;
+  }
+
+  .accordion-content {
+    margin-top: 8px;
+    border-radius: 8px;
+    background: var(--blue-400);
+  }
+
+  .accordion-content h2 {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .questions-title {
+    margin-bottom: 80px;
+  }
+
+  .accordion-content p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .accordion-content[id^='accordion-content-'] {
+    margin-bottom: 16px;
+    padding: 40px;
+  }
+}
+
+/* Footer */
+.footer {
+  margin-top: 112px;
+  padding: 40px 32px;
+  grid-template-columns: 1fr auto;
+  gap: 61px;
+}
+
+.footer-info {
+  gap: 16px;
+}
+.footer-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.footer-item {
+  font-weight: 400;
+  font-size: 14px;
+  gap: 32px;
+}
+
+.footer-li {
+  font-size: 14px;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Mobile - 420px */
+@media screen and (max-width: 420px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  #app {
+    padding: 16px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .btn:hover {
+    background: var(--btn-hover);
+  }
+
+  .sub-btn {
+    padding: 12px;
+  }
+
+  .btn-small {
+    padding: 12px 20px;
+  }
+
+  .green-block {
+    border-radius: 25px;
+    padding: 48px 108px;
+    background-color: var(--green-400);
+    margin-top: 136px;
+  }
+
+  /* Header */
+  .header {
+    margin-bottom: 72px;
+    padding-top: 48px;
+    gap: 89px;
+  }
+
+  /* Assistant section */
+
+  .assistant {
+    flex-direction: column-reverse;
+    gap: 16px;
+    & img {
+      width: 100%;
+      max-width: 388px;
+    }
+  }
+
+  .assistant-button {
+    width: 100%;
+  }
+
+  /* Career-tracker */
+  .career-tracker {
+    flex-direction: column;
+    padding: 32px 24px;
+    margin-top: 88px;
+    gap: 40px;
+    & img {
+      width: 100%;
+      max-width: 184px;
+    }
+  }
+  .career-media-text {
+    display: none;
+  }
+  .career-text {
+    font-size: 20px;
+  }
+  .career-text span {
+    display: block;
+  }
+  /* Card section */
+  .card {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 88px;
+  }
+
+  .card-header .card-image {
+    display: none;
+  }
+
+  .card-item {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .card-info {
+    width: 388px;
+  }
+
+  .card-item:nth-child(odd) {
+    flex-direction: column;
+  }
+  .card-item:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .card-header img {
+    max-width: 388px;
+  }
+   .card-header .card-mobile {
+    display: block;
+  }
+
+  .card-button {
+    width: 100%;
+    max-width: 353px;
+    margin-bottom: 144px;
+    margin-top: 56px;
+  }
+
+  /* Benefits section */
+  .benefits {
+    padding: 32px 24px;
+  }
+  .benefits-info {
+    flex-direction: column;
+  }
+
+  /* Reviews section */
+  .reviews {
+    margin-top: 88px;
+  }
+
+  .reviews-container-wrapper {
+    width: calc(106% - 10px);
+  }
+
+  .reviews-container {
+    gap: 16px;
+  }
+
+  .review-item {
+    padding: 24px;
+  }
+  .review-item::before {
+    border-radius: 7px 7px 0 0;
+    width: 80px;
+    height: 24px;
+    top: -28px;
+  }
+
+  .reviewer-city {
+    font-size: 12px;
+  }
+  .arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .reviews-container-wrapper {
+    overflow: hidden;
+  }
+
+  .reviews-container {
+    display: flex;
+    transition: transform 0.3s ease-out;
+  }
+  /* Accordion section */
+
+  /* Accordion section */
+  .content-container {
+    display: none;
+  }
+
+  .accordion-content {
+    margin-top: 8px;
+    border-radius: 8px;
+    background: var(--blue-400);
+  }
+
+  .accordion-content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .accordion-content[id^='accordion-content-'] {
+    margin-bottom: 16px;
+    padding: 16px;
+  }
+
+  /* Navigation buttons */
+  .arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Footer */
+
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 40px;
+    margin-top: 88px;
+    gap: 0;
+  }
+
+  .footer-logo img {
+    width: 127px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-info .footer-item:first-child .footer-title {
+    margin-top: 56px;
+  }
+
+  .footer-info .footer-item:nth-child(2) .footer-title {
+    margin-top: 40px;
+  }
+
+  .footer-item {
+    gap: 16px;
+  }
+
+  .copyright {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}

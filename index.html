@@ -1,360 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="src/css/media.css" />
+    <title>Vite App</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" href="./src/css/reset.css" />
-  <link rel="stylesheet" href="/src/css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <title>Vite App</title>
-</head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <img src="/public/images/icons/logo.svg" alt="Logo" />
 
-<body>
-  <div id="app">
-    <header class="header">
-      <img src="/public/images/icons/logo.svg" alt="Logo" />
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#" class="btn btn-small">Вхід</a></li>
+            <li>
+              <a href="#" class="btn sub-btn">Реєстрація</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="#" class="btn btn-small">Вхід</a></li>
-          <li>
-            <a href="#" class="btn sub-btn">Реєстрація</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <section class="assistant">
+        <div class="assistant-info">
+          <h1 class="title assistant-title">Ваш помічник у пошуку роботи мрії</h1>
+          <p class="subtitle assistant-text">
+            Організуйте всі свої заявки, відстежуйте прогрес і аналізуйте результати — все в одному додатку. Реєструйтесь і зробіть перший крок до кар’єрного успіху.
+          </p>
+          <a href="#" class="btn assistant-button">Розпочати пошук роботи</a>
+        </div>
+        <img src="/public/images/device.webp" alt="Device" />
+      </section>
 
-    <section class="assistant">
-      <div class="assistant-info">
-        <h1 class="title assistant-title">
-          Ваш помічник у пошуку роботи мрії
-        </h1>
-        <p class="subtitle assistant-text">
-          Організуйте всі свої заявки, відстежуйте прогрес і аналізуйте
-          результати — все в одному додатку. Реєструйтесь і зробіть перший
-          крок до кар’єрного успіху.
+      <section class="green-block career-tracker">
+        <div class="career-media">
+          <img src="/public/images/icons/logoBig.svg" alt="Logo" />
+          <span class="career-media-text">Apply Tracker — це ваш особистий кар’єрний органайзер.</span>
+        </div>
+        <p class="career-text">
+          <span>Apply Tracker — це ваш особистий кар’єрний органайзер.</span> Зручне відслідковування заявок та отримання аналітичних інсайтів про ваш прогрес. Тут є все для того, щоб ви не губились у
+          хаосі й завжди були на крок ближче до нових кар’єрних можливостей.
         </p>
-        <a href="#" class="btn assistant-button">Розпочати пошук роботи</a>
-      </div>
-      <img src="/public/images/device.webp" alt="Device" />
-    </section>
+      </section>
 
-    <section class="green-block career-tracker">
-      <img src="/public/images/icons/logoBig.svg" alt="Logo" />
-      <p class="career-text">
-        Apply Tracker — це ваш особистий кар’єрний органайзер. Зручне
-        відслідковування заявок та отримання аналітичних інсайтів про ваш
-        прогрес. Тут є все для того, щоб ви не губились у хаосі й завжди були
-        на крок ближче до нових кар’єрних можливостей.
-      </p>
-    </section>
+      <section class="card">
+        <h2 class="card-title title">Як це працює?</h2>
+        <div class="card-item">
+          <div class="card-header" data-aos="fade-up" data-aos-duration="600">
+            <img class="card-image" src="/public/images/card/Registrate page .webp" alt="Registrate page" />
+            <img class="card-mobile" src="/public/images/card/card-mobile/first-card.png" alt="Registrate page" />
+          </div>
+          <div class="card-info" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
+            <span class="number">1.</span>
+            <h2 class="card-item-title">Реєструйтеся</h2>
+            <p class="card-desc">Створіть обліковий запис за кілька хвилин. Усе, що вам потрібно, — це електронна пошта та пароль, щоб почати.</p>
+          </div>
+        </div>
 
-    <section class="card">
-      <h2 class="card-title title">Як це працює?</h2>
-      <div class="card-item">
-        <div class="card-header">
-          <img src="/public/images/card/Registrate page .webp" alt="Registrate page" />
+        <div class="card-item">
+          <div class="card-header" data-aos="fade-up" data-aos-duration="600">
+            <img class="card-image" src="/public/images/card/Vacancy page purple.webp" alt="Vacancy page" />
+            <img class="card-mobile" src="/public/images/card/card-mobile/secont-card.png" alt="Registrate page" />
+          </div>
+          <div class="card-info" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
+            <span class="number">2.</span>
+            <h2 class="card-title">Додавайте заявки</h2>
+            <p class="card-desc">Вносьте вакансії, на які подаєтеся, та додавайте важливу інформацію: компанію, позицію, дедлайни та контакти.</p>
+          </div>
         </div>
-        <div class="card-info">
-          <span class="number">1.</span>
-          <h2 class="card-item-title">Реєструйтеся</h2>
-          <p class="card-desc">
-            Створіть обліковий запис за кілька хвилин. Усе, що вам потрібно, —
-            це електронна пошта та пароль, щоб почати.
-          </p>
-        </div>
-      </div>
 
-      <div class="card-item">
-        <div class="card-header">
-          <img src="/public/images/card/Vacancy page purple.webp" alt="Vacancy page" />
+        <div class="card-item">
+          <div class="card-header" data-aos="fade-up" data-aos-duration="600">
+            <img class="card-image" src="/public/images/card/Vacancy page yellow.webp" alt="Vacancy page" />
+            <img class="card-mobile" src="/public/images/card/card-mobile/third-card.png" alt="Registrate page" />
+          </div>
+          <div class="card-info" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
+            <span class="number">3.</span>
+            <h2 class="card-title">Відстежуйте прогрес</h2>
+            <p class="card-desc">Переглядайте ваші результати за допомогою інтуїтивної панелі: кількість заявок, етапи відбору та успішність ваших дій.</p>
+          </div>
         </div>
-        <div class="card-info">
-          <span class="number">2.</span>
-          <h2 class="card-title">Додавайте заявки</h2>
-          <p class="card-desc">
-            Вносьте вакансії, на які подаєтеся, та додавайте важливу
-            інформацію: компанію, позицію, дедлайни та контакти.
-          </p>
-        </div>
-      </div>
-      <div class="card-item">
-        <div class="card-header">
-          <img src="/public/images/card/Vacancy page yellow.webp" alt="Vacancy page" />
-        </div>
-        <div class="card-info">
-          <span class="number">3.</span>
-          <h2 class="card-title">Відстежуйте прогрес</h2>
-          <p class="card-desc">
-            Переглядайте ваші результати за допомогою інтуїтивної панелі:
-            кількість заявок, етапи відбору та успішність ваших дій.
-          </p>
-        </div>
-      </div>
-      <div class="card-item">
-        <div class="card-header">
-          <img src="/public/images/card/Statistacs page.webp" alt="Statistics " />
-        </div>
-        <div class="card-info">
-          <span class="number">4.</span>
-          <h2 class="card-title">Аналізуйте результати</h2>
-          <p class="card-desc">
-            Отримуйте інсайти про ваш прогрес. Дізнавайтесь, які дії дають
-            найкращі результати, щоб покращити свій підхід.
-          </p>
-        </div>
-      </div>
-      <div class="card-item">
-        <div class="card-header">
-          <img src="/public/images/card/Profile page.webp" alt="Profile" />
-        </div>
-        <div class="card-info">
-          <span class="number">5.</span>
-          <h2 class="card-title">Тримайте все під рукою</h2>
-          <p class="card-desc">
-            Зберігайте резюме, листи та іншу інформацію у своєму профілі, щоб
-            швидко повертатися до них у потрібний момент.
-          </p>
-        </div>
-      </div>
 
-      <button data-aos="fade-up" class="btn card-button">
-        Зареєструватися та почати
-      </button>
-    </section>
+        <div class="card-item">
+          <div class="card-header" data-aos="fade-up" data-aos-duration="600">
+            <img class="card-image" src="/public/images/card/Statistacs page.webp" alt="Statistics " />
+            <img class="card-mobile" src="/public/images/card/card-mobile/fourth-card.png" alt="Registrate page" />
+          </div>
+          <div class="card-info" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
+            <span class="number">4.</span>
+            <h2 class="card-title">Аналізуйте результати</h2>
+            <p class="card-desc">Отримуйте інсайти про ваш прогрес. Дізнавайтесь, які дії дають найкращі результати, щоб покращити свій підхід.</p>
+          </div>
+        </div>
 
-    <section class="questions">
-      <div class="accordion-container">
-        <div class="accordion">
-          <div class="accordion-item active">
-            <div class="accordion-header">
-              Question 1
-              <span class="icon">-</span>
+        <div class="card-item">
+          <div class="card-header" data-aos="fade-up" data-aos-duration="600" data-aos-duration="800">
+            <img class="card-image" src="/public/images/card/Profile page.webp" alt="Profile" />
+            <img class="card-mobile" src="/public/images/card/card-mobile//fifth-card.png" alt="Registrate page" />
+            <button class="card-toggle">☰</button>
+          </div>
+          <div class="card-info" data-aos="fade-left" data-aos-delay="400">
+            <span class="number">5.</span>
+            <h2 class="card-title">Тримайте все під рукою</h2>
+            <p class="card-desc">Зберігайте резюме, листи та іншу інформацію у своєму профілі, щоб швидко повертатися до них у потрібний момент.</p>
+          </div>
+        </div>
+
+        <button class="btn card-button" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">Зареєструватися та почати</button>
+      </section>
+
+      <section class="benefits" data-aos="fade-up">
+        <h2 class="benefits-title">Чому ми?</h2>
+        <div class="benefits-info">
+          <div class="benefits-item">
+            <div class="counter-container reverse" data-start="8" data-end="1">
+              <div class="counter-track"></div>
             </div>
+            <p class="benefits-desc">Інструмент для всього процесу пошуку роботи</p>
           </div>
 
-          <div class="accordion-item">
-            <div class="accordion-header">
-              Question 2
-              <span class="icon">+</span>
+          <div class="benefits-item">
+            <div class="counter-container special">
+              <span class="twenty-four">24</span>
+              <span class="slash">/</span>
+              <span class="seven">7</span>
             </div>
+            <p class="benefits-desc">Доступ із будь-якого пристрою</p>
           </div>
 
-          <div class="accordion-item">
-            <div class="accordion-header">
-              Question 3
-              <span class="icon">+</span>
+          <div class="benefits-item">
+            <div class="counter-container reverse" data-start="28" data-end="23">
+              <div class="counter-track"></div>
             </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-header">
-              Question 4
-              <span class="icon">+</span>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-header">
-              Question 5
-              <span class="icon">+</span>
-            </div>
+            <p class="benefits-desc">Метрики для відслідковування статистики</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="benefits" data-aos="fade-up">
-      <h2 class="benefits-title">Чому ми?</h2>
-      <div class="benefits-info">
-        <div class="benefits-item">
-          <div class="counter-container reverse" data-start="8" data-end="1">
-            <div class="counter-track"></div>
-          </div>
-          <p class="benefits-desc">
-            Інструмент для всього процесу пошуку роботи
-          </p>
-        </div>
-
-        <div class="benefits-item">
-          <div class="counter-container special">
-            <span class="twenty-four">24</span>
-            <span class="slash">/</span>
-            <span class="seven">7</span>
-          </div>
-          <p class="benefits-desc">Доступ із будь-якого пристрою</p>
-        </div>
-
-        <div class="benefits-item">
-          <div class="counter-container reverse" data-start="28" data-end="23">
-            <div class="counter-track"></div>
-          </div>
-          <p class="benefits-desc">Метрики для відслідковування статистики</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="reviews">
-      <h2 class="title">Відгуки користувачів</h2>
-      <div class="reviews-container-wrapper">
-        <div class="reviews-container">
-          <div class="review-item">
-            <p class="review-text">
-              Не думав, що мені це настільки допоможе. Особливо круто бачити,
-              на якому етапі все застрягло, і не витрачати час даремно.
-            </p>
-            <div class="review-info">
-              <div class="review-avatar">
-                <img src="/public/images/card/avatars/3.jpg" alt="" />
-              </div>
-              <div class="reviewer-details">
-                <h5 class="reviewer-name">Дмитро Ю.</h5>
-                <span class="reviewer-city">м. Черкаси</span>
+      </section>
+      <section class="reviews">
+        <h2 class="title">Відгуки користувачів</h2>
+        <div class="reviews-container-wrapper">
+          <div class="reviews-container">
+            <div class="review-item">
+              <p class="review-text">Не думав, що мені це настільки допоможе. Особливо круто бачити, на якому етапі все застрягло, і не витрачати час даремно.</p>
+              <div class="review-info">
+                <div class="reviewer-details">
+                  <h5 class="reviewer-name">Дмитро Ю.</h5>
+                  <span class="reviewer-city">м. Черкаси</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="review-item">
-            <p class="review-text">
-              Не думав, що мені це настільки допоможе. Особливо круто бачити,
-              на якому етапі все застрягло, і не витрачати час даремно.
-            </p>
-            <div class="review-info">
-              <div class="review-avatar">
-                <img src="/public/images/card/avatars/3.jpg" alt="" />
-              </div>
-              <div class="reviewer-details">
-                <h5 class="reviewer-name">Дмитро Ю.</h5>
-                <span class="reviewer-city">м. Черкаси</span>
+            <div class="review-item">
+              <p class="review-text">Не думав, що мені це настільки допоможе. Особливо круто бачити, на якому етапі все застрягло, і не витрачати час даремно.</p>
+              <div class="review-info">
+                <div class="reviewer-details">
+                  <h5 class="reviewer-name">Дмитро Ю.</h5>
+                  <span class="reviewer-city">м. Черкаси</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="review-item">
-            <p class="review-text">
-              Не думав, що мені це настільки допоможе. Особливо круто бачити,
-              на якому етапі все застрягло, і не витрачати час даремно.
-            </p>
-            <div class="review-info">
-              <div class="review-avatar">
-                <img src="/public/images/card/avatars/3.jpg" alt="" />
-              </div>
-              <div class="reviewer-details">
-                <h5 class="reviewer-name">Дмитро Ю.</h5>
-                <span class="reviewer-city">м. Черкаси</span>
+            <div class="review-item">
+              <p class="review-text">Не думав, що мені це настільки допоможе. Особливо круто бачити, на якому етапі все застрягло, і не витрачати час даремно.</p>
+              <div class="review-info">
+                <div class="reviewer-details">
+                  <h5 class="reviewer-name">Дмитро Ю.</h5>
+                  <span class="reviewer-city">м. Черкаси</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="review-item">
-            <p class="review-text">
-              Не думав, що мені це настільки допоможе. Особливо круто бачити,
-              на якому етапі все застрягло, і не витрачати час даремно.
-            </p>
-            <div class="review-info">
-              <div class="review-avatar">
-                <img src="/public/images/card/avatars/3.jpg" alt="" />
-              </div>
-              <div class="reviewer-details">
-                <h5 class="reviewer-name">Дмитро Ю.</h5>
-                <span class="reviewer-city">м. Черкаси</span>
+            <div class="review-item">
+              <p class="review-text">Не думав, що мені це настільки допоможе. Особливо круто бачити, на якому етапі все застрягло, і не витрачати час даремно.</p>
+              <div class="review-info">
+                <div class="reviewer-details">
+                  <h5 class="reviewer-name">Дмитро Ю.</h5>
+                  <span class="reviewer-city">м. Черкаси</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="review-item">
-            <p class="review-text">
-              Не думав, що мені це настільки допоможе. Особливо круто бачити,
-              на якому етапі все застрягло, і не витрачати час даремно.
-            </p>
-            <div class="review-info">
-              <div class="review-avatar">
-                <img src="/public/images/card/avatars/3.jpg" alt="" />
-              </div>
-              <div class="reviewer-details">
-                <h5 class="reviewer-name">Дмитро Ю.</h5>
-                <span class="reviewer-city">м. Черкаси</span>
+            <div class="review-item">
+              <p class="review-text">Не думав, що мені це настільки допоможе. Особливо круто бачити, на якому етапі все застрягло, і не витрачати час даремно.</p>
+              <div class="review-info">
+                <div class="reviewer-details">
+                  <h5 class="reviewer-name">Дмитро Ю.</h5>
+                  <span class="reviewer-city">м. Черкаси</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="review-item">
-            <p class="review-text">
-              Не думав, що мені це настільки допоможе. Особливо круто бачити,
-              на якому етапі все застрягло, і не витрачати час даремно.
-            </p>
-            <div class="review-info">
-              <div class="review-avatar">
-                <img src="/public/images/card/avatars/3.jpg" alt="" />
-              </div>
-              <div class="reviewer-details">
-                <h5 class="reviewer-name">Дмитро Ю.</h5>
-                <span class="reviewer-city">м. Черкаси</span>
+            <div class="review-item">
+              <p class="review-text">Не думав, що мені це настільки допоможе. Особливо круто бачити, на якому етапі все застрягло, і не витрачати час даремно.</p>
+              <div class="review-info">
+                <div class="reviewer-details">
+                  <h5 class="reviewer-name">Дмитро Ю.</h5>
+                  <span class="reviewer-city">м. Черкаси</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="arrows">
-        <button class="arrow prev">
-          <span class="material-icons">chevron_left</span>
-        </button>
-        <button class="arrow next">
-          <span class="material-icons">chevron_right</span>
-        </button>
-      </div>
-    </section>
-
-    <footer class="green-block footer">
-      <img src="/public/images/icons/logoBig.svg" alt="Logo" />
-      <div class="footer-info">
-        <div class="footer-item">
-          <h4 class="footer-title">Підтримка</h4>
-          <ul class="footer-list">
-            <li class="footer-li">
-              <img src="/public/images/icons/call.svg" alt="" />
-              + 380 (99) 888 77 66
-            </li>
-            <li class="footer-li">
-              <img src="/public/images/icons/massage.svg" alt="" />
-              support.team@apply.tracker
-            </li>
-            <li class="footer-li">
-              <img src="/public/images/icons/support.svg" alt="" />
-              Чат підтримки
-            </li>
-          </ul>
+        <div class="arrows">
+          <button class="arrow prev">
+            <span class="material-icons">chevron_left</span>
+          </button>
+          <button class="arrow next">
+            <span class="material-icons">chevron_right</span>
+          </button>
         </div>
-        <div class="footer-item">
-          <h4 class="footer-title">Наші соцмережі</h4>
-          <ul class="footer-list">
-            <li class="footer-li social">
-              <img src="/public/images/icons/instagram.svg" alt="" />
-              applytracker.ua
-            </li>
-            <li class="footer-li social">
-              <img src="/public/images/icons/facebook.svg" alt="" />
-              applytrack
-            </li>
-            <li class="footer-li social">
-              <img src="/public/images/icons/linkedin.svg" alt="" />
-              applytracker
-            </li>
-          </ul>
+      </section>
+
+      <section class="questions">
+        <h2 class="title questions-title">Поширені запитання</h2>
+        <div class="accordion-container">
+          <div class="accordion">
+            <div class="accordion-item active">
+              <div class="accordion-header">
+                Question 1
+                <span class="icon">-</span>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                Question 2
+                <span class="icon">+</span>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                Question 3
+                <span class="icon">+</span>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                Question 4
+                <span class="icon">+</span>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                Question 5
+                <span class="icon">+</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
-    <span class="copyright">
-      Розробка Baza Trainee Ukraine 2025 © Усі права захищені
-    </span>
-  </div>
+      </section>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="main.js"></script>
-</body>
+      <footer class="green-block footer">
+        <div class="footer-logo">
+          <img src="/public/images/icons/logoBig.svg" alt="Logo" />
+        </div>
 
+        <div class="footer-info">
+          <div class="footer-item">
+            <h4 class="footer-title">Підтримка</h4>
+            <ul class="footer-list">
+              <li class="footer-li">
+                <img src="/public/images/icons/call.svg" alt="" />
+                + 380 (99) 888 77 66
+              </li>
+              <li class="footer-li">
+                <img src="/public/images/icons/massage.svg" alt="" />
+                support.team@apply.tracker
+              </li>
+              <li class="footer-li">
+                <img src="/public/images/icons/support.svg" alt="" />
+                Чат підтримки
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <h4 class="footer-title">Наші соцмережі</h4>
+            <ul class="footer-list">
+              <li class="footer-li social">
+                <img src="/public/images/icons/instagram.svg" alt="" />
+                applytracker.ua
+              </li>
+              <li class="footer-li social">
+                <img src="/public/images/icons/facebook.svg" alt="" />
+                applytrack
+              </li>
+              <li class="footer-li social">
+                <img src="/public/images/icons/linkedin.svg" alt="" />
+                applytracker
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <span class="copyright"> Розробка Baza Trainee Ukraine 2025 © Усі права захищені </span>
+    </div>
+
+    <script src="./src/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
 </html>
