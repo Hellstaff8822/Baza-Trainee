@@ -7,6 +7,7 @@
 
   .review-item {
     padding: 24px;
+    height: 344px;
   }
 }
 
@@ -156,6 +157,8 @@
 
   .review-item {
     padding: 24px 16px;
+    width: 336px;
+    height: 320px;
   }
   .review-text {
     font-weight: 300;
@@ -377,6 +380,8 @@
 
   .review-item {
     padding: 24px;
+    width: 364px;
+    height: 288px;
   }
   .review-item::before {
     border-radius: 7px 7px 0 0;
