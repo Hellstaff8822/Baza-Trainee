@@ -113,7 +113,6 @@ ul {
   padding: 0;
 }
 
-
 .title {
   font-weight: 900;
   font-size: 50px;
@@ -130,16 +129,16 @@ ul {
 
 .btn {
   border: 1px solid var(--black);
+  background: var(--button);
+  color: var(--black);
   border-radius: 12px;
   padding: 12px 48px;
   width: 334px;
   height: 51px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 135%;
-  background: var(--button);
-  color: var(--black);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .btn:hover {

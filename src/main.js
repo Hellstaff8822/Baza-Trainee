@@ -207,7 +207,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   // Benefits
   const counterContainers = document.querySelectorAll('.counter-container')
-
   const isElementInViewport = el => {
     const rect = el.getBoundingClientRect()
     return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth)
@@ -243,7 +242,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  window.addEventListener('scroll',() => {
+  window.addEventListener(
+    'scroll',
+    () => {
       counterContainers.forEach((container, index) => {
         if (isElementInViewport(container) && !container.classList.contains('animated')) {
           container.classList.add('animated')
