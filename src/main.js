@@ -243,9 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  window.addEventListener(
-    'scroll',
-    () => {
+  window.addEventListener('scroll',() => {
       counterContainers.forEach((container, index) => {
         if (isElementInViewport(container) && !container.classList.contains('animated')) {
           container.classList.add('animated')
