@@ -1,10 +1,19 @@
 /* Desktop-small - 1280px */
 
+@media screen and (max-width: 1280px) {
+  #app {
+    padding: 24px 40px;
+  }
+
+  .review-item {
+    padding: 24px;
+  }
+}
+
 /* Tablet - 768px */
 @media screen and (max-width: 768px) {
   #app {
     padding: 25px;
-    overflow-x: hidden;
   }
   .logo {
     width: 144px;
@@ -146,7 +155,7 @@
   }
 
   .review-item {
-    padding: 24px 12px;
+    padding: 24px 16px;
   }
   .review-text {
     font-weight: 300;
@@ -421,8 +430,10 @@
 
   .footer {
     flex-direction: column;
+    align-items: start;
     padding: 40px;
     margin-top: 88px;
+    gap: 0;
   }
 
   .footer-logo img {
