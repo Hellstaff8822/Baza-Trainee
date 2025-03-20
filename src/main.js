@@ -279,64 +279,67 @@ document.addEventListener('DOMContentLoaded', () => {
     { passive: true }
   )
 
-  function startCounterAnimation(container) {
-    if (!container) return
+function startCounterAnimation(container) {
+  if (!container || container.classList.contains('animation-completed')) return;
+  container.classList.add('animated');
 
-    if (container.classList.contains('special')) {
-      const twentyFour = container.querySelector('.twenty-four')
-      const seven = container.querySelector('.seven')
+  if (container.classList.contains('special')) {
+    const twentyFour = container.querySelector('.twenty-four');
+    const seven = container.querySelector('.seven');
 
-      if (twentyFour && seven) {
-        twentyFour.style.transform = 'translateY(20px)'
-        twentyFour.style.opacity = '0'
-        seven.style.transform = 'translateY(20px)'
-        seven.style.opacity = '0'
+    if (twentyFour && seven) {
+      twentyFour.style.transform = 'translateY(20px)';
+      twentyFour.style.opacity = '0';
+      seven.style.transform = 'translateY(20px)';
+      seven.style.opacity = '0';
 
-        requestAnimationFrame(() => {
-          twentyFour.style.transition = 'transform 0.9s ease-out, opacity 1.5s ease-out'
-          seven.style.transition = 'transform 0.9s ease-out, opacity 1.5s ease-out'
+      requestAnimationFrame(() => {
+        twentyFour.style.transition = 'transform 0.9s ease-out, opacity 1.5s ease-out';
+        seven.style.transition = 'transform 0.9s ease-out, opacity 1.5s ease-out';
 
-          twentyFour.style.transform = 'translateY(0)'
-          twentyFour.style.opacity = '1'
-          seven.style.transform = 'translateY(0)'
-          seven.style.opacity = '1'
-        })
+        twentyFour.style.transform = 'translateY(0)';
+        twentyFour.style.opacity = '1';
+        seven.style.transform = 'translateY(0)';
+        seven.style.opacity = '1';
+      });
+    }
+  } else {
+    const track = container.querySelector('.counter-track');
+    if (track) {
+      const start = parseInt(container.dataset.start, 10);
+      const end = parseInt(container.dataset.end, 10);
+      const isReverse = container.classList.contains('reverse');
+
+      let numbers = [];
+      if (!isReverse) {
+        for (let i = start; i <= end; i++) numbers.push(i);
+      } else {
+        for (let i = start; i >= end; i--) numbers.push(i);
       }
-    } else {
-      const track = container.querySelector('.counter-track')
-      if (track) {
-        const start = parseInt(container.dataset.start, 10)
-        const end = parseInt(container.dataset.end, 10)
-        const isReverse = container.classList.contains('reverse')
 
-        let numbers = []
-        if (!isReverse) {
-          for (let i = start; i <= end; i++) numbers.push(i)
-        } else {
-          for (let i = start; i >= end; i--) numbers.push(i)
-        }
+      track.style.transition = 'none';
+      track.style.transform = 'translateY(0)';
 
-        track.style.transition = 'none'
-        track.style.transform = 'translateY(0)'
+      track.innerHTML = '';
+      numbers.forEach(num => {
+        const span = document.createElement('span');
+        span.classList.add('benefits-number-item');
+        span.textContent = num;
+        track.appendChild(span);
+      });
 
-        track.innerHTML = ''
-        numbers.forEach(num => {
-          const span = document.createElement('span')
-          span.classList.add('benefits-number-item')
-          span.textContent = num
-          track.appendChild(span)
-        })
+      track.offsetHeight;
 
-        track.offsetHeight
-
-        requestAnimationFrame(() => {
-          const translateY = -((numbers.length - 1) * COUNTER_ITEM_HEIGHT)
-          track.style.transition = `transform ${ANIMATION_DURATION}ms cubic-bezier(0.4, 0, 0.2, 1)`
-          track.style.transform = `translateY(${translateY}px)`
-        })
-      }
+      requestAnimationFrame(() => {
+        const translateY = -((numbers.length - 1) * COUNTER_ITEM_HEIGHT);
+        track.style.transition = `transform ${ANIMATION_DURATION}ms cubic-bezier(0.4, 0, 0.2, 1)`;
+        track.style.transform = `translateY(${translateY}px)`;
+      });
     }
   }
+
+  container.classList.add('animation-completed');
+}
 
   const benefitsObserver = new IntersectionObserver(
     entries => {
